@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayoutTop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/mainLayoutBack"
+        android:layout_width="340dp"
+        android:layout_height="550dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageViewBoxBacking"
+            android:layout_width="330dp"
+            android:layout_height="540dp"
+            android:background="#494343"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/screwMainUL"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:background="@drawable/screw2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.021"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.01999998" />
+
+        <Button
+            android:id="@+id/screwMainLR"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/screw2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.98" />
+
+        <Button
+            android:id="@+id/screwMainLL"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/screw2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.021"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.98" />
+
+        <Button
+            android:id="@+id/screwMainUR"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/screw2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.01999998" />
+
+        <ImageView
+            android:id="@+id/imageViewPcLogo"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/pclogo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.965" />
+
+        <TextView
+            android:id="@+id/textViewAppName"
+            android:layout_width="325dp"
+            android:layout_height="22dp"
+            android:gravity="center"
+            android:text="Wind Filter Pure"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.01" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/filterLayout"
+            android:layout_width="325dp"
+            android:layout_height="300dp"
+            android:background="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.14">
+
+            <Button
+                android:id="@+id/screwFiltersLR"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="@drawable/screw2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.97"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.96" />
+
+            <Button
+                android:id="@+id/screwFiltersUL"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="@drawable/screw2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.04000002" />
+
+            <Button
+                android:id="@+id/screwFiltersLL"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="@drawable/screw2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.96" />
+
+            <Button
+                android:id="@+id/screwFiltersUR"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="@drawable/screw2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.97"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.04000002" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="315dp"
+                android:layout_height="290dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@color/cardview_dark_background" />
+
+            <com.rey.material.widget.Slider
+                android:id="@+id/sliderFilterCut1"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:keepScreenOn="true"
+                android:padding="16dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.164"
+                app:sl_alwaysFillThumb="true"
+                app:sl_maxValue="6000"
+                app:sl_primaryColor="@color/colorPrimary"
+                app:sl_secondaryColor="@color/colorPrimary"
+                app:sl_thumbFocusRadius="8dp"
+                app:sl_thumbRadius="8dp"
+                app:sl_thumbTouchRadius="12dp"
+                app:sl_trackSize="2dp"
+                app:sl_value="0" />
+
+            <com.rey.material.widget.Slider
+                android:id="@+id/sliderFilterQ1"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:keepScreenOn="true"
+                android:padding="16dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.164"
+                app:sl_alwaysFillThumb="true"
+                app:sl_maxValue="10"
+                app:sl_minValue="0"
+                app:sl_primaryColor="@color/colorPrimary"
+                app:sl_secondaryColor="@color/colorPrimary"
+                app:sl_thumbFocusRadius="8dp"
+                app:sl_thumbRadius="8dp"
+                app:sl_thumbTouchRadius="12dp"
+                app:sl_trackSize="2dp"
+                app:sl_value="0" />
+
+            <com.rey.material.widget.Slider
+                android:id="@+id/sliderFilterCut2"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:keepScreenOn="true"
+                android:padding="16dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.536"
+                app:sl_alwaysFillThumb="true"
+                app:sl_maxValue="6000"
+                app:sl_primaryColor="@color/colorPrimary"
+                app:sl_secondaryColor="@color/colorPrimary"
+                app:sl_thumbFocusRadius="8dp"
+                app:sl_thumbRadius="8dp"
+                app:sl_thumbTouchRadius="12dp"
+                app:sl_trackSize="2dp"
+                app:sl_value="0" />
+
+            <com.rey.material.widget.Slider
+                android:id="@+id/sliderFilterQ2"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:keepScreenOn="true"
+                android:padding="16dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.536"
+                app:sl_alwaysFillThumb="true"
+                app:sl_maxValue="10"
+                app:sl_minValue="0"
+                app:sl_primaryColor="@color/colorPrimary"
+                app:sl_secondaryColor="@color/colorPrimary"
+                app:sl_thumbFocusRadius="8dp"
+                app:sl_thumbRadius="8dp"
+                app:sl_thumbTouchRadius="12dp"
+                app:sl_trackSize="2dp"
+                app:sl_value="0" />
+
+            <com.rey.material.widget.Slider
+                android:id="@+id/sliderFilterCut3"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:keepScreenOn="true"
+                android:padding="16dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.9"
+                app:sl_alwaysFillThumb="true"
+                app:sl_maxValue="6000"
+                app:sl_primaryColor="@color/colorPrimary"
+                app:sl_secondaryColor="@color/colorPrimary"
+                app:sl_thumbFocusRadius="8dp"
+                app:sl_thumbRadius="8dp"
+                app:sl_thumbTouchRadius="12dp"
+                app:sl_trackSize="2dp"
+                app:sl_value="0" />
+
+            <com.rey.material.widget.Slider
+                android:id="@+id/sliderFilterQ3"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:keepScreenOn="true"
+                android:padding="16dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.9"
+                app:sl_alwaysFillThumb="true"
+                app:sl_maxValue="10"
+                app:sl_minValue="0"
+                app:sl_primaryColor="@color/colorPrimary"
+                app:sl_secondaryColor="@color/colorPrimary"
+                app:sl_thumbFocusRadius="8dp"
+                app:sl_thumbRadius="8dp"
+                app:sl_thumbTouchRadius="12dp"
+                app:sl_trackSize="2dp"
+                app:sl_value="0" />
+
+            <TextView
+                android:id="@+id/textViewFilterCut3"
+                android:layout_width="150dp"
+                android:layout_height="22dp"
+                android:gravity="center"
+                android:text="Cut"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.731" />
+
+            <TextView
+                android:id="@+id/textViewFilterCut1"
+                android:layout_width="150dp"
+                android:layout_height="22dp"
+                android:gravity="center"
+                android:text="Cut"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.071" />
+
+            <TextView
+                android:id="@+id/textViewFilter3"
+                android:layout_width="0dp"
+                android:layout_height="22dp"
+                android:gravity="center"
+                android:text="Filter 3"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.655" />
+
+            <TextView
+                android:id="@+id/textViewFilterQ1"
+                android:layout_width="150dp"
+                android:layout_height="22dp"
+                android:gravity="center"
+                android:text="Q"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.072" />
+
+            <TextView
+                android:id="@+id/textViewFilter2"
+                android:layout_width="0dp"
+                android:layout_height="22dp"
+                android:gravity="center"
+                android:text="Filter 2"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.334" />
+
+            <TextView
+                android:id="@+id/textViewFilterCut2"
+                android:layout_width="150dp"
+                android:layout_height="22dp"
+                android:gravity="center"
+                android:text="Cut"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.41" />
+
+            <TextView
+                android:id="@+id/textViewFilterQ2"
+                android:layout_width="150dp"
+                android:layout_height="22dp"
+                android:gravity="center"
+                android:text="Q"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.41" />
+
+            <TextView
+                android:id="@+id/textViewFilter1"
+                android:layout_width="0dp"
+                android:layout_height="22dp"
+                android:gravity="center"
+                android:text="Filter 1"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.019" />
+
+            <TextView
+                android:id="@+id/textViewFilterQ3"
+                android:layout_width="150dp"
+                android:layout_height="22dp"
+                android:gravity="center"
+                android:text="Q"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.73" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/optionsLayout"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:background="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.768">
+
+            <Button
+                android:id="@+id/screwSettingsUR"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="@drawable/screw2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.97"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.07999998" />
+
+            <Button
+                android:id="@+id/screwSettingsUL"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="@drawable/screw2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.07999998" />
+
+            <Button
+                android:id="@+id/screwSettingsLR"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="@drawable/screw2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.97"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.93" />
+
+            <Button
+                android:id="@+id/screwSettingsLL"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="@drawable/screw2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.93" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="290dp"
+                android:layout_height="90dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@color/cardview_dark_background" />
+
+            <TextView
+                android:id="@+id/textViewSettings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Settings"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.123" />
+
+            <TextView
+                android:id="@+id/textViewSynthOn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Power"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.345" />
+
+            <ToggleButton
+                android:id="@+id/toggleButtonModOn"
+                android:layout_width="85dp"
+                android:layout_height="35dp"
+                android:background="#9d9494"
+                android:text="ToggleButton"
+                android:textOff=" "
+                android:textOn=" "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.753" />
+
+            <ToggleButton
+                android:id="@+id/toggleButtonSynthOn"
+                android:layout_width="85dp"
+                android:layout_height="35dp"
+                android:background="#9d9494"
+                android:textOff=" "
+                android:textOn=" "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.85"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.753" />
+
+            <TextView
+                android:id="@+id/textViewModOn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Mod"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.345" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
